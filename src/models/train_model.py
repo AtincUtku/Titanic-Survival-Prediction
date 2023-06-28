@@ -15,7 +15,7 @@ def train_model():
     X_train, X_val, y_train, y_val = train_test_split(X, y, test_size=0.2, random_state=42)
 
     # Train a RandomForest model
-    rf = RandomForestClassifier(n_estimators=37, max_depth=8, random_state=1)
+    rf = RandomForestClassifier(n_estimators=35, max_depth=7, random_state=1)
     rf.fit(X_train, y_train)
 
     # Calculate the accuracy of the model on training data
